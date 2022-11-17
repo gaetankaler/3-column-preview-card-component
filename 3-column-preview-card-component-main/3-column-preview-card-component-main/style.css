@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 87%;
+}
+img {
+  width: 4.2rem;
+  height: 3rem;
+  margin-top: 3rem;
+  margin-left: 3.3rem;
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  margin-top: 2.3rem;
+  margin-left: 3.3rem;
+  font-size: 2.6rem;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin: 1.6rem 2.8rem 1.5rem 3.2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+button {
+  width: 45%;
+  height: 3.2rem;
+  margin-left: 3.2rem;
+  margin-bottom: 3.1rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: url(./images/cursor1.png), pointer;
+}
+button:hover {
+  border: solid 1px white;
+  color: white;
+}
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+.btn-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+.btn-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+.btn-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+  margin-top: 5.8rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-bottom: 6rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1440px) {
+  section {
+    flex-direction: row;
+  }
+  article {
+    width: 21.3%;
+  }
+  .card-sedans {
+    margin-left: 17.35rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .card-sedans,
+  .card-suvs {
+    margin-top: 5.4rem;
+  }
+  .card-luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin-top: 11.4rem;
+  }
+  p {
+    margin: 1.7rem 2.8rem 1.5rem 3.7rem;
+  }
+  button {
+    margin-top: 4rem;
+    width: 48%;
+  }
+}
